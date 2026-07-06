@@ -30,5 +30,9 @@ PRODUCT_PACKAGES += DriverUIPrebuilt
 PRODUCT_COPY_FILES += device/google/sdv/sdv_ivi_cf/ethernet/ethernet.sdv_ivi_cf.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/ethernet.sdv_ivi_cf.rc
 PRODUCT_PACKAGES += passwd
 
+ifneq ($(TARGET_BUILD_VARIANT),user)
+include device/google/sdv/sdv_base/init_open_dice/init_open_dice_from_file.mk
+endif
+
 $(call inherit-product, packages/services/Car/car_product/driverui/driverui_app_and_rros.mk)
 
