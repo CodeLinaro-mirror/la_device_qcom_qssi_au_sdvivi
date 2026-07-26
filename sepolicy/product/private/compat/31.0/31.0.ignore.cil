@@ -1,0 +1,21 @@
+;; new_objects - a collection of types that have been introduced with ToT policy
+;;   that have no analogue in 31.0 policy.  Thus, we do not need to map
+;;   these types to previous ones.  Add here to pass checkapi tests.
+(type new_objects)
+(typeattribute new_objects)
+(typeattributeset new_objects
+  ( new_objects
+    mesh_missing_vms_prop
+    open_dice_device
+    sdv_configurable_publisher_registry_service
+    sdv_dice_chain_provider_service
+    sdv_dt_service
+    sdv_id_service
+    sdv_mesh_provisioning_service
+    sdv_mesh_status_service
+    sdv_rpcagent_service
+    sdv_sd_service
+    sdv_telemetry_service
+    sdv_transport_support_service
+    vsock_device
+  ))
