@@ -2,7 +2,6 @@ SDV_VEHICLE_POWER_STATE_MANAGER_MODULE := vepsm
 SDV_SOMEIP_BROKER_CONFIG := broker_config.json
 SDV_VM_LEVEL_PERMISSIONS_MODULE := com.oem.sdv.authz.allow_all.ivi
 PRODUCT_BROKEN_SUBOPTIMAL_ORDER_OF_SYSTEM_SERVER_JARS := true
-#TARGET_BOARD_DERIVATIVE_SUFFIX := _sdvivi
 
 include device/google/sdv/sdv_ivi_base/sdv_ivi_base.mk
 include device/google/sdv/sdv_ivi_base/sdv_samples_ivi_services.mk
@@ -10,6 +9,7 @@ include device/google/sdv/sdv_base/sdv_sample_ethernet_setup.mk
 include device/google/sdv/sdv_base/sepolicy/samples/device_sepolicy.mk
 include device/qcom/qssi_au/qssi_au.mk
 
+TARGET_BOARD_DERIVATIVE_SUFFIX := _sdvivi
 VENDOR_QTI_DEVICE := qssi_au_sdvivi
 PRODUCT_NAME := $(VENDOR_QTI_DEVICE)
 PRODUCT_DEVICE := $(VENDOR_QTI_DEVICE)
