@@ -1,4 +1,5 @@
 #include device/google/sdv/sdv_ivi_base/BoardConfig.mk
+TARGET_ARCH := ARM
 include device/qcom/qssi_au/BoardConfig.mk
 SDV_RPC_INTERFACE := sdv_rpc
 
