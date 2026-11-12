@@ -34,5 +34,7 @@ ifneq ($(TARGET_BUILD_VARIANT),user)
 include device/google/sdv/sdv_base/init_open_dice/init_open_dice_from_file.mk
 endif
 
-$(call inherit-product, packages/services/Car/car_product/driverui/driverui_app_and_rros.mk)
+include packages/services/Car/car_product/driverui/driverui_app_and_rros.mk
+
+PRODUCT_PACKAGES := $(filter-out CarServiceDriverUIRRO,$(PRODUCT_PACKAGES))
 
